@@ -1,0 +1,63 @@
+header{
+    font-size:40px;
+    text-align:center;
+    font-family:Georgia;
+}
+
+.arrow{
+    float:right;
+}
+
+.arrow-left{
+    float:left;
+}
+
+.luna{
+    color:grey;
+}
+
+.max{
+    color:#d6ac7a;
+}
+
+.content{
+    padding:5px;
+    font-size:25px;
+}
+
+iframe{
+    width:400px;
+    height:600px;
+}
+
+.large{
+    font-size:40px;
+}
+
+.arrow-left:hover{
+    color:grey;
+}
+
+.arrow:hover{
+    color:#d6ac7a;
+}
+
+img{
+    width:400px;
+    border-style:solid;
+    border-width:5px;
+}
+
+img.puppy{
+    animation: invisible 3s forwards;
+}
+
+@keyframes invisible {
+    from {
+        filter: opacity(0%);
+    }
+    
+    to {
+        filter: opacity(100%);
+    }
+}
