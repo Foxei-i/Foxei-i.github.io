@@ -1,6 +1,7 @@
 
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
+const myImage = document.querySelector("img");
 
 function setUserName() {
   const myName = prompt("Please enter your name.");
@@ -17,4 +18,13 @@ if (!localStorage.getItem("name")) {
 
 myButton.addEventListener("click", () => {
   setUserName();
+});
+
+myImage.addEventListener("click", () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/firefox-icon.png") {
+    myImage.setAttribute("src", "images/firefox2.png");
+  } else {
+    myImage.setAttribute("src", "images/firefox-icon.png");
+  }
 });
